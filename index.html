@@ -23,14 +23,20 @@
     <div class="container">
         <div class="menu">
             <header>
-                <h1><strong>AERIX</strong></h1>
+                <strong><h1>AERIX</h1></strong>
             </header>
             <div class="details">
                 <h4>Email</h4>
-                <input class="info" type="text" placeholder="example@gmail.com"/>
-                <br>
+                <div class="input-container">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input class="info" type="text" placeholder="example@gmail.com"/>
+                </div>
                 <h4>Password</h4>
-                <input class="info" type="password" placeholder="Password"/>
+                <div class="input-container">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input id="passwordInput" class="info" type="password" placeholder="Password"/>
+                    <ion-icon id="togglePassword" name="eye-off-outline" class="toggle-icon"></ion-icon>
+                </div>
             </div>
             <a href="#" class="resetp" target='_blank'>
                 <h4 id="forgot">Forgot password?</h4>
@@ -44,12 +50,12 @@
                 </div>
                 <button id="google">
                     <div class="alignment">
-                        <img src="google.svg" class="image" alt="google_logo">
+                        <img src="/html/login_menu/google.svg" class="image" alt="google_logo">
                         <a href="#" id="g">Continue with Google</a>
                     </div>
                 </button>
                 <div class="new">
-                    New to <strong>AERIX</strong> ?
+                    New to <strong>AERIX</strong>?
                     <a href="#" class="join" target='_blank'>Sign Up</a>
                 </div>
             </div>
@@ -58,5 +64,12 @@
     <div class="footer">
         created by <b>Wyrtalius</b> © 2025
     </div>
+
+    <!--JS-->
+    <script src="script.js"></script>
+
+    <!--ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
