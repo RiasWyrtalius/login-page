@@ -58,7 +58,7 @@ input {
     width: calc(100% - 20px);
     height: 2em;
 
-    background-color: #E0C6FF;
+    background-color: #bbbbbb;
 }
 
 header {
@@ -76,6 +76,7 @@ button {
 strong {
     font-family: "Anton", sans-serif;
     font-weight: 500;
+    letter-spacing: 2px;
     font-style: normal;
     color: #418ce3;
 }
@@ -109,7 +110,7 @@ img {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 
 h4 {
@@ -168,9 +169,40 @@ img {
 }
 
 .info {
-    border: 2px solid #a5a5a5;
+    border: 1px solid #757575;
     border-radius: 10px;
     padding: 8px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.input-container ion-icon {
+    font-size: 20px;
+    color: #888;
+    position: absolute;
+}
+  
+.input-container .info {
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 35px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-container ion-icon:first-of-type {
+    left: 10px;
+}
+
+/* Right icon (eye toggle) */
+.toggle-icon {
+    right: 10px;
+    cursor: pointer;
 }
 
 .resetp {
@@ -232,8 +264,8 @@ img {
 }
 
 #google {
-    border: 1.5px solid #757575;
-    background-color:#E0C6FF;
+    border: 1px solid #757575;
+    background-color:#bbbbbb;
 }
 
 #g {
